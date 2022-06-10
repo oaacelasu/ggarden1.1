@@ -1,6 +1,6 @@
 <!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
 Date: 10/06/22
-Assignment 2: Create Multi-Column Responsive Web Pages -->
+Assignment 3: CSS Box model & Web Graphics -->
 
 
 <!-- Task. 2 – construct the home page “index html” -->
@@ -22,33 +22,34 @@ Assignment 2: Create Multi-Column Responsive Web Pages -->
         <h1>Gabriel Green Garden House</h1>
     </header>
     <nav>
-        <!-- 4. Inside <nav>, create a navigation bar with the following links: -->
-        <div>
-            <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
-            <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-            <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
-            <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
-        </div>
+        <a href="index.html">Home</a>
+        <a href="plants.html">Plants</a>
+        <a href="gardening.html">Gardening</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <!-- 5. Inside <main>, create a section with the following content: -->
-        <h2>Welcome to Gabriel Green Garden House</h2>
-        <p>Integer ut diam quis diam fermentum lobortis eget sit amet lectus. Nulla eu elit fringilla, maximus enim nec, mollis augue. Sed et nisl vitae nisl fringilla volutpat. Suspendisse potenti. Nullam malesuada purus non quam lacinia fermentum. Proin id arcu at magna laoreet egestas eget fringilla tellus. Cras lacinia nisi ac erat pharetra, non porttitor diam viverra. Suspendisse potenti. Phasellus sit amet dictum quam. Nullam enim augue, fermentum ac aliquam quis, egestas et justo. Fusce tincidunt est vel massa rutrum, eget tempor mauris porta. Nam et est pulvinar, rutrum sapien in, posuere nisl. Nullam non justo elementum, dictum justo sed, molestie nibh.</p>
-        <ul>
-            <li>Garden center</li>
-            <li>Landscape & gardening Ideas</li>
-            <li>Grow indoor & outdoor plants</li>
-            <li>Planters</li>
-        </ul>
-        <h3>
-            <strong>Address</strong>
-        </h3>
-        <address>
-            <i>130 Columbia St W</i><br>
-            <i>Waterloo, Ontario N2L 0G6, Canada</i><br>
-            <i>Phone: 519-781-3645</i><br>
-            <i>Email: <span><a href="mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i>
-        </address>
+        <!-- Then insert an <img> element inside <main>, ahead of #wrapper with ‘id=hero-img” -->
+        <img id="hero-img" src="img/zen-garden-with-autumn-colors.jpg" alt="hero image">
+        <div id="wrapper">
+            <!-- 5. Inside <main>, create a section with the following content: -->
+            <h2>Welcome to Gabriel Green Garden House</h2>
+            <p>Integer ut diam quis diam fermentum lobortis eget sit amet lectus. Nulla eu elit fringilla, maximus enim nec, mollis augue. Sed et nisl vitae nisl fringilla volutpat. Suspendisse potenti. Nullam malesuada purus non quam lacinia fermentum. Proin id arcu at magna laoreet egestas eget fringilla tellus. Cras lacinia nisi ac erat pharetra, non porttitor diam viverra. Suspendisse potenti. Phasellus sit amet dictum quam. Nullam enim augue, fermentum ac aliquam quis, egestas et justo. Fusce tincidunt est vel massa rutrum, eget tempor mauris porta. Nam et est pulvinar, rutrum sapien in, posuere nisl. Nullam non justo elementum, dictum justo sed, molestie nibh.</p>
+            <ul>
+                <li>Garden center</li>
+                <li>Landscape & gardening Ideas</li>
+                <li>Grow indoor & outdoor plants</li>
+                <li>Planters</li>
+            </ul>
+            <h3>
+                <strong>Address</strong>
+            </h3>
+            <address>
+                <p><i>130 Columbia St W</i></p>
+                <p><i>Waterloo, Ontario N2L 0G6, Canada</i></p>
+                <p><i>Phone: 519-781-3645</i><p>
+                <p><i>Email: <span><a href="mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i><p>
+            </address>
+        </div>
     </main>
     <!-- 6. Create the footer section -->
     <footer>
@@ -79,12 +80,10 @@ Assignment 2: Create Multi-Column Responsive Web Pages -->
         <div>
             <h3>Quick Links</h3>
             <nav>
-                <div>
-                    <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
-                    <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-                    <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
-                    <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
-                </div>
+                <a href="index.html">Home</a>
+                <a href="plants.html">Plants</a>
+                <a href="gardening.html">Gardening</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
         <!-- 7. Create id for the copyright section -->
