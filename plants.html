@@ -1,7 +1,6 @@
-<!--- 
-Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
-Date: 25/05/22
-Assignment 1: Creating your First HTML -->
+<!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
+Date: 10/06/22
+Assignment 2: Create Multi-Column Responsive Web Pages -->
 
 
 <!-- Task. 3 - construct plants.html -->
@@ -11,6 +10,8 @@ Assignment 1: Creating your First HTML -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add stylesheet -->
+    <link rel="stylesheet" href="site.css">
     <!-- 2.	Assign a unique and representative title to the plants page. e.g., "Gabriel Green Garden House -Plants" -->
     <title>Gabriel Green Garden House - Plants</title>
 </head>
@@ -22,7 +23,7 @@ Assignment 1: Creating your First HTML -->
         <div>
             <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
             <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-            <span><a href="gardering.html">Gardering</a></span>&nbsp;&nbsp;
+            <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
             <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
         </div>
     </nav>
@@ -30,6 +31,7 @@ Assignment 1: Creating your First HTML -->
         <!-- 3. Create a section for the plants -->
         <h2>Plants</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</p>
+        <br><br>
         <dl>
             <dt><b>Vines</b></dt>
             <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</dd>
@@ -40,6 +42,7 @@ Assignment 1: Creating your First HTML -->
             <dt><b>Trees</b></dt>
             <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</dd>
         </dl>
+        <br><br>
     </main>
     <!-- 4. Create the footer section -->
     <footer>
@@ -69,14 +72,17 @@ Assignment 1: Creating your First HTML -->
         </div>
         <div>
             <h3>Quick Links</h3>
-            <div>
-                <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
-                <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-                <span><a href="gardering.html">Gardering</a></span>&nbsp;&nbsp;
-                <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
-            </div>
+            <nav>
+                <div>
+                    <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
+                    <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
+                    <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
+                    <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
+                </div>
+            </nav>
         </div>
-        <p>Copyright &copy; Gabriel Green Garden House</p>
+        <!-- 7. Create id for the copyright section -->
+        <p id="copyright">Copyright &copy; Gabriel Green Garden House</p>
     </footer>
 </body>
 </html>

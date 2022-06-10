@@ -1,6 +1,6 @@
 <!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
-Date: 25/05/22
-Assignment 1: Creating your First HTML -->
+Date: 10/06/22
+Assignment 2: Create Multi-Column Responsive Web Pages -->
 
 
 <!-- Task. 2 – construct the home page “index html” -->
@@ -10,6 +10,8 @@ Assignment 1: Creating your First HTML -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add stylesheet -->
+    <link rel="stylesheet" href="site.css">
     <!-- 1. Give an appropriate title for home page (e.g., the name of the garden center) -->
     <title>Gabriel Green Garden House</title>
 </head>
@@ -24,7 +26,7 @@ Assignment 1: Creating your First HTML -->
         <div>
             <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
             <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-            <span><a href="gardering.html">Gardering</a></span>&nbsp;&nbsp;
+            <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
             <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
         </div>
     </nav>
@@ -45,7 +47,7 @@ Assignment 1: Creating your First HTML -->
             <i>130 Columbia St W</i><br>
             <i>Waterloo, Ontario N2L 0G6, Canada</i><br>
             <i>Phone: 519-781-3645</i><br>
-            <i>Email: <span><a href=" mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i>
+            <i>Email: <span><a href="mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i>
         </address>
     </main>
     <!-- 6. Create the footer section -->
@@ -76,14 +78,17 @@ Assignment 1: Creating your First HTML -->
         </div>
         <div>
             <h3>Quick Links</h3>
-            <div>
-                <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
-                <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-                <span><a href="gardering.html">Gardering</a></span>&nbsp;&nbsp;
-                <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
-            </div>
+            <nav>
+                <div>
+                    <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
+                    <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
+                    <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
+                    <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
+                </div>
+            </nav>
         </div>
-        <p>Copyright &copy; Gabriel Green Garden House</p>
+        <!-- 7. Create id for the copyright section -->
+        <p id="copyright">Copyright &copy; Gabriel Green Garden House</p>
     </footer>
 </body>
 </html>

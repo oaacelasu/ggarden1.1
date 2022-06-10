@@ -1,0 +1,80 @@
+/* 2. Font styles: */
+
+/* Configure the font family of <h1>, <nav> and <footer> with the fallback typeface values:
+"Century Gothic" and “serif” */
+h1, nav, footer {
+  font-family: "Century Gothic", serif;
+}
+
+/* Configure the font family of <h2>, <h3> and <dt> with the fallback values “Gabriela” and
+“sans-serif“ */
+h2, h3, dt {
+    font-family: "Gabriola", sans-serif;
+}
+/* For <h1>, set the font size to “3em”, and the font weight to “500” */
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+/* For <h2>, set the font size to “2em” */
+h2 {
+  font-size: 2em;
+}
+
+/* For <dt>, set the font weight to “bold” */
+dt {
+  font-weight: bold;
+}
+
+/* For <footer>, set the font size to “smaller” */
+footer {
+  font-size: smaller;
+}
+
+/* For id selector “#copyright”, set font family to “serif” and apply “italic” style */
+ #copyright {
+  font-family: serif;
+  font-style: italic;
+}
+
+/*3. Color styles */
+
+/* For <header>, <footer>, set the background color as: “rgb(65,132, 42)”; and set text
+color as “#eee” */
+header, footer {
+  background-color: rgb(65, 132, 42);
+  color: #eee;
+}
+
+/* For <h2> and the navigation links, set the text color as: “rgb(35,102, 12)” */
+h2, nav a {
+  color: rgb(35, 102, 12);
+}
+
+/* Set the text color of descendant selector “footer nav a” as: “#eee” */
+footer nav a {
+  color: #eee;
+}
+
+/* 4. Text styles: */
+/*set up “400%” line height” for <h1> */
+h1 {
+  line-height: 400%;
+}
+
+/* for <h2>, <h3>, <dt> and the descendant selector ““nav a”, apply “uppercase” for “text-transform” property, and apply “1px” letter spacing */
+h2, h3, dt, nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* for <h1>, <nav> and “#copyright”, align text to “center” */
+h1, nav, #copyright {
+  text-align: center;
+}
+
+/* set the text decoration of all navigation links (“nav a”) to “none” */
+nav a {
+  text-decoration: none;
+}
