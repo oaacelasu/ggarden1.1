@@ -1,6 +1,6 @@
 <!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
 Date: 10/06/22
-Assignment 2: Create Multi-Column Responsive Web Pages -->
+Assignment 3: CSS Box model & Web Graphics -->
 
 
 <!-- Task. 3 - construct plants.html -->
@@ -20,29 +20,47 @@ Assignment 2: Create Multi-Column Responsive Web Pages -->
         <h1>Gabriel Green Garden House</h1>
     </header>
     <nav>
-        <div>
-            <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
-            <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-            <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
-            <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
-        </div>
+        <a href="index.html">Home</a>
+        <a href="plants.html">Plants</a>
+        <a href="gardening.html">Gardening</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <!-- 3. Create a section for the plants -->
-        <h2>Plants</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</p>
-        <br><br>
-        <dl>
-            <dt><b>Vines</b></dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</dd>
-            <dt><b>Evergreens</b></dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</dd>
-            <dt><b>Flowering Shrubs</b></dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</dd>
-            <dt><b>Trees</b></dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</dd>
-        </dl>
-        <br><br>
+        <img id="hero-img" src="img/curly-tendrils-of-potted-plants-on-wooden-shelf.jpg" alt="hero image">
+        <div id="wrapper">
+            <!-- 3. Create a section for the plants -->
+            <h2>Plants</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</p>
+
+            <!-- 4. Create a section for the plants -->
+            <div id="categories">
+                <section>
+                    <h3>Vines</h3>
+                    <img src="img/bee-covered-in-yellow-dust.jpg" alt="vines">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </section>
+                <section>
+                    <h3>Evergreens</h3>
+                    <img src="img/gold-shelf-with-a-green-vine-house-plant.jpg" alt="evergreen">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </section>
+                <section>
+                    <h3>Flowering Shrubs</h3>
+                    <img src="img/close-up-on-evergreen-bonzai.jpg" alt="flowering shrubs">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </section>
+                <section>
+                    <h3>Trees</h3>
+                    <img src="img/summer-garden-with-pink-phlox.jpg" alt="trees">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </section>
+                <section>
+                    <h3>Annuals</h3>
+                    <img src="img/sunflower-fills-center-of-a-frame.jpg" alt="annuals">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </section>
+            </div>
+        </div>
     </main>
     <!-- 4. Create the footer section -->
     <footer>
@@ -73,12 +91,10 @@ Assignment 2: Create Multi-Column Responsive Web Pages -->
         <div>
             <h3>Quick Links</h3>
             <nav>
-                <div>
-                    <span><a href="index.html">Home</a></span>&nbsp;&nbsp;
-                    <span><a href="plants.html">Plants</a></span>&nbsp;&nbsp;
-                    <span><a href="gardening.html">Gardening</a></span>&nbsp;&nbsp;
-                    <span><a href="contact.html">Contact</a></span>&nbsp;&nbsp;
-                </div>
+                <a href="index.html">Home</a>
+                <a href="plants.html">Plants</a>
+                <a href="gardening.html">Gardening</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
         <!-- 7. Create id for the copyright section -->
