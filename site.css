@@ -17,6 +17,15 @@ h1 {
   font-weight: 500;
 }
 
+h1 a {
+    text-decoration: none;
+    color: #eee;
+}
+
+h1 a:hover {
+    text-shadow: 2px 2px 10px white;
+}
+
 /* For <h2>, set the font size to “2em” */
 h2 {
   font-size: 2em;
@@ -69,11 +78,6 @@ h1, nav, #copyright {
   text-align: center;
 }
 
-/* set the text decoration of all navigation links (“nav a”) to “none” */
-nav a {
-  text-decoration: none;
-}
-
 /* Assignment.1-3  -- Task.3 - CSS */
 /* 1.	set the margin of <body> and <h1> to zero; */
 body, h1 {
@@ -90,17 +94,21 @@ header {
 /*3.	for <h1>, change the background color to “ rgba(5, 72, 12, .5)”, and add text shadow “2px 2px 10px white”;*/
 h1 {
     background-color: rgba(5, 72, 12, .5);
-    text-shadow: 2px 2px 10px white;
 }
 
 /* 4.	set the display property of “nav a” to “inline-block” and give it 10px top/bottom padding and 20px left/right padding;*/
 nav a {
+    text-decoration: none;
+    padding: 10px 40px;
     display: inline-block;
-    padding: 10px 20px;
+}
+
+nav a:hover {
+    text-shadow: 0 0 1px rgb(20, 70, 20);
 }
 /* 5.	center the content of “#wrapper” by setting width: 80%; margin: auto; */
 #wrapper {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -108,13 +116,6 @@ nav a {
 footer {
     padding: 10px 10%;
     margin-top: 20px;
-}
-
-/* 7.	use the selector “footer > div” to set the immediate child <div> elements of <footer> as “inline-block” display, and then give each of them a width value of 33%;*/
-footer div {
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
 }
 
 /* or <ul>, set padding to zero; and set “list-style” to “none” ;*/
@@ -152,13 +153,57 @@ d.	use “object-position” to align the center of the image with the image box
 /* 12.	set 20px bottom margin to <section> elements inside “#categories” ;*/
 #categories section {
     margin-bottom: 20px;
+    float: left;
+    width: 50%;
+    overflow: auto;
 }
 
 /* 13. reduce size of images in “#categories” by 20px -- not in instructions */
 #categories img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     object-position: center;
     margin-right: 10px;
+    float: left;
+}
+
+#categories h3 {
+    margin-top: 0;
+}
+
+nav {
+    float: left;
+}
+
+main {
+    overflow: hidden;
+    border-left: 1px solid rgb(158,194, 143);
+}
+
+.item33 {
+    float: left;
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+#copyright {
+    clear: both;
+}
+
+.icon {
+    display: block;
+    font-size: 3em;
+    color: rgb(35,102, 12);
+}
+
+.item25 {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#multicol {
+    overflow: auto;
 }
