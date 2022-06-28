@@ -1,6 +1,6 @@
 <!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
-Date: 10/06/22
-Assignment 3: CSS Box model & Web Graphics -->
+Date: 28/06/22
+Assignment 2: CSS Box model, Web Graphics, Media Queries & Responsiveness -->
 
 
 <!-- Task. 2 – construct the home page “index html” -->
@@ -31,23 +31,23 @@ Assignment 3: CSS Box model & Web Graphics -->
     </nav>
     <main>
         <!-- Then insert an <img> element inside <main>, ahead of #wrapper with ‘id=hero-img” -->
-        <img id="hero-img" src="img/zen-garden-with-autumn-colors.jpg" alt="hero image">
+        <img id="hero-img" class="desktop" src="img/zen-garden-with-autumn-colors.jpg" alt="hero image">
         <div id="wrapper">
             <!-- 5. Inside <main>, create a section with the following content: -->
             <h2>Welcome to Gabriel Green Garden House</h2>
             <p>Integer ut diam quis diam fermentum lobortis eget sit amet lectus. Nulla eu elit fringilla, maximus enim nec, mollis augue. Sed et nisl vitae nisl fringilla volutpat. Suspendisse potenti. Nullam malesuada purus non quam lacinia fermentum. Proin id arcu at magna laoreet egestas eget fringilla tellus. Cras lacinia nisi ac erat pharetra, non porttitor diam viverra. Suspendisse potenti. Phasellus sit amet dictum quam. Nullam enim augue, fermentum ac aliquam quis, egestas et justo. Fusce tincidunt est vel massa rutrum, eget tempor mauris porta. Nam et est pulvinar, rutrum sapien in, posuere nisl. Nullam non justo elementum, dictum justo sed, molestie nibh.</p>
             <div id="multicol">
                 <section class="item25">
-                    <h3><span class="icon">&#x265A</span>Garden center</h3>
+                    <h3><span class="icon">&#x265A;</span>Garden center</h3>
                 </section>
                 <section class="item25">
-                    <h3><span class="icon">&#x2619</span>Landscape & gardening Ideas</h3>
+                    <h3><span class="icon">&#x2619;</span>Landscape & gardening Ideas</h3>
                 </section>
                 <section class="item25">
-                    <h3><span class="icon">&#x1F324</span>Grow indoor & outdoor plants</h3>
+                    <h3><span class="icon">&#x1F324;</span>Grow indoor & outdoor plants</h3>
                 </section>
                 <section class="item25">
-                    <h3><span class="icon">&#x2698</span>Planters</h3>
+                    <h3><span class="icon">&#x2698;</span>Planters</h3>
                 </section>
             </div>
 
@@ -57,7 +57,8 @@ Assignment 3: CSS Box model & Web Graphics -->
             <address>
                 <p><i>130 Columbia St W</i></p>
                 <p><i>Waterloo, Ontario N2L 0G6, Canada</i></p>
-                <p><i>Phone: 519-781-3645</i><p>
+                <p class="desktop"><i>Phone: 519-781-3645</i><p>
+                <p class="mobile"><a href="tel:5197813645"><i>Phone: 519-781-3645</i></a><p>
                 <p><i>Email: <span><a href="mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i><p>
             </address>
         </div>
