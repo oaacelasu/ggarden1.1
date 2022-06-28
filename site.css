@@ -207,3 +207,94 @@ main {
 #multicol {
     overflow: auto;
 }
+/* 1.	Under desktop view (the default view), hide “.mobile” class by setting the display property to “none” (this will hide the telephone link)*/
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    /*a.	Reset “float” property <nav> to “none”;*/
+    nav {
+        float: none;
+    }
+
+    /*
+    b.	Change the display property of list items inside <nav> to “inline-block” so that they appear in the same row; to keep quick links stacked up meanwhile, use “footer nav ul li” as selector to keep their display property as “block”;
+     */
+    nav ul li {
+        display: inline-block;
+    }
+
+
+    footer nav ul li {
+        display: block;
+    }
+
+    /*
+    c.	Change the font size of <h1> to “2.5em”;
+     */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    /*d.	Change the padding of “nav a” to “padding:10px 30px”;*/
+    nav a {
+        padding: 10px 30px;
+    }
+
+    /*
+    e.	Turn off “float” on the selector “#categories section” and set its width to “100%”.
+     */
+    #categories section {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 759px) {
+    /*
+    a.	Hide “.desktop” class under mobile view by setting “display:none”;  and show “.mobile” class by setting “display:block”;
+    */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    /* b.	Apply “border-bottom: 1px solid rgb(158,194, 143)” on <nav> to create a visual separation from the <main> element;*/
+    nav {
+        border-bottom: 1px solid rgb(158, 194, 143);
+    }
+
+    /*c.	 Change the width of “.item25” class to “50%”;*/
+    .item25 {
+        width: 50%;
+    }
+
+    /*
+    d.	Stack up all main navigation links by restoring the display property of list items inside <nav> to “block”;
+     */
+    nav ul li {
+        display: block;
+    }
+
+    /*
+    e.	For all images inside “#categories”, reduce the size to “120px” in both width and height;
+     */
+
+    #categories img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /*
+    f.	Stack up all “.item33” class blocks inside <footer> by turning off its “float” property, and changing the “display” property to “block”; and then give them 40% left padding to place the text in page center (roughly);
+     */
+    footer .item33 {
+        float: none;
+        display: block;
+        padding-left: 40%;
+    }
+}
