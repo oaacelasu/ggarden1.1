@@ -1,6 +1,6 @@
 <!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
-Date: 28/06/22
-Assignment 2: CSS Box model, Web Graphics, Media Queries & Responsiveness -->
+Date: 14/07/22
+Assignment 3: Flexbox & CSS Grid -->
 
 
 <!-- Task. 2 – construct the home page “index html” -->
@@ -17,91 +17,93 @@ Assignment 2: CSS Box model, Web Graphics, Media Queries & Responsiveness -->
 </head>
     <!-- 2. Based on the given wire frame, create the skeleton of the home page structure -->
 <body>
-    <!-- 3. Create the header section -->
-    <header>
-        <h1><a href="index.html">Gabriel Green Garden House</a></h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plants.html">Plants</a></li>
-            <li><a href="gardening.html">Gardening</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- Then insert an <img> element inside <main>, ahead of #wrapper with ‘id=hero-img” -->
-        <img id="hero-img" class="desktop" src="img/zen-garden-with-autumn-colors.jpg" alt="hero image">
-        <div id="wrapper">
-            <!-- 5. Inside <main>, create a section with the following content: -->
-            <h2>Welcome to Gabriel Green Garden House</h2>
-            <p>Integer ut diam quis diam fermentum lobortis eget sit amet lectus. Nulla eu elit fringilla, maximus enim nec, mollis augue. Sed et nisl vitae nisl fringilla volutpat. Suspendisse potenti. Nullam malesuada purus non quam lacinia fermentum. Proin id arcu at magna laoreet egestas eget fringilla tellus. Cras lacinia nisi ac erat pharetra, non porttitor diam viverra. Suspendisse potenti. Phasellus sit amet dictum quam. Nullam enim augue, fermentum ac aliquam quis, egestas et justo. Fusce tincidunt est vel massa rutrum, eget tempor mauris porta. Nam et est pulvinar, rutrum sapien in, posuere nisl. Nullam non justo elementum, dictum justo sed, molestie nibh.</p>
-            <div id="multicol">
-                <section class="item25">
-                    <h3><span class="icon">&#x265A;</span>Garden center</h3>
-                </section>
-                <section class="item25">
-                    <h3><span class="icon">&#x2619;</span>Landscape & gardening Ideas</h3>
-                </section>
-                <section class="item25">
-                    <h3><span class="icon">&#x1F324;</span>Grow indoor & outdoor plants</h3>
-                </section>
-                <section class="item25">
-                    <h3><span class="icon">&#x2698;</span>Planters</h3>
-                </section>
-            </div>
+    <div id="page-container">
+        <!-- 3. Create the header section -->
+        <header>
+            <h1><a href="index.html">Gabriel Green Garden House</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="gardening.html">Gardening</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Then insert an <img> element inside <main>, ahead of #wrapper with ‘id=hero-img” -->
+            <img id="hero-img" class="desktop" src="img/zen-garden-with-autumn-colors.jpg" alt="hero image">
+            <div id="wrapper">
+                <!-- 5. Inside <main>, create a section with the following content: -->
+                <h2>Welcome to Gabriel Green Garden House</h2>
+                <p>Integer ut diam quis diam fermentum lobortis eget sit amet lectus. Nulla eu elit fringilla, maximus enim nec, mollis augue. Sed et nisl vitae nisl fringilla volutpat. Suspendisse potenti. Nullam malesuada purus non quam lacinia fermentum. Proin id arcu at magna laoreet egestas eget fringilla tellus. Cras lacinia nisi ac erat pharetra, non porttitor diam viverra. Suspendisse potenti. Phasellus sit amet dictum quam. Nullam enim augue, fermentum ac aliquam quis, egestas et justo. Fusce tincidunt est vel massa rutrum, eget tempor mauris porta. Nam et est pulvinar, rutrum sapien in, posuere nisl. Nullam non justo elementum, dictum justo sed, molestie nibh.</p>
+                <div id="multicol">
+                    <section class="item25">
+                        <h3><span class="icon">&#x265A;</span>Garden center</h3>
+                    </section>
+                    <section class="item25">
+                        <h3><span class="icon">&#x2619;</span>Landscape & gardening Ideas</h3>
+                    </section>
+                    <section class="item25">
+                        <h3><span class="icon">&#x1F324;</span>Grow indoor & outdoor plants</h3>
+                    </section>
+                    <section class="item25">
+                        <h3><span class="icon">&#x2698;</span>Planters</h3>
+                    </section>
+                </div>
 
-            <h3>
-                <strong>Address</strong>
-            </h3>
-            <address>
-                <p><i>130 Columbia St W</i></p>
-                <p><i>Waterloo, Ontario N2L 0G6, Canada</i></p>
-                <p class="desktop"><i>Phone: 519-781-3645</i><p>
-                <p class="mobile"><a href="tel:5197813645"><i>Phone: 519-781-3645</i></a><p>
-                <p><i>Email: <span><a href="mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i><p>
-            </address>
-        </div>
-    </main>
-    <!-- 6. Create the footer section -->
-    <footer>
-        <div class="item33">
-            <h3>Store hours</h3>
-            <ul>
-                <li>Monday: 9:00am - 5:00pm</li>
-                <li>Tuesday: 9:00am - 5:00pm</li>
-                <li>Wednesday: 9:00am - 5:00pm</li>
-                <li>Thursday: 9:00am - 5:00pm</li>
-                <li>Friday: 9:00am - 5:00pm</li>
-                <li>Saturday: 9:00am - 5:00pm</li>
-                <li>Sunday: Closed</li>
-            </ul>
-        </div>
-        <div class="item33">
-            <h3>Stores</h3>
-            <ul>
-                <li>Waterloo</li>
-                <li>London</li>
-                <li>Ottawa</li>
-                <li>Toronto</li>
-                <li>Montreal</li>
-                <li>Quebec</li>
-                <li>Vancouver</li>
-            </ul>
-        </div>
-        <div class="item33">
-            <h3>Quick Links</h3>
-            <nav>
+                <h3>
+                    <strong>Address</strong>
+                </h3>
+                <address>
+                    <p><i>130 Columbia St W</i></p>
+                    <p><i>Waterloo, Ontario N2L 0G6, Canada</i></p>
+                    <p class="desktop"><i>Phone: 519-781-3645</i><p>
+                    <p class="mobile"><a href="tel:5197813645"><i>Phone: 519-781-3645</i></a><p>
+                    <p><i>Email: <span><a href="mailto:oacelasupegui4062@conestogac.on.ca">oacelasupegui4062@conestogac.on.ca</a></span></i><p>
+                </address>
+            </div>
+        </main>
+        <!-- 6. Create the footer section -->
+        <footer>
+            <div class="item33">
+                <h3>Store hours</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="plants.html">Plants</a></li>
-                    <li><a href="gardening.html">Gardening</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>Monday: 9:00am - 5:00pm</li>
+                    <li>Tuesday: 9:00am - 5:00pm</li>
+                    <li>Wednesday: 9:00am - 5:00pm</li>
+                    <li>Thursday: 9:00am - 5:00pm</li>
+                    <li>Friday: 9:00am - 5:00pm</li>
+                    <li>Saturday: 9:00am - 5:00pm</li>
+                    <li>Sunday: Closed</li>
                 </ul>
-            </nav>
-        </div>
-        <!-- 7. Create id for the copyright section -->
-        <p id="copyright">Copyright &copy; Gabriel Green Garden House</p>
-    </footer>
+            </div>
+            <div class="item33">
+                <h3>Stores</h3>
+                <ul>
+                    <li>Waterloo</li>
+                    <li>London</li>
+                    <li>Ottawa</li>
+                    <li>Toronto</li>
+                    <li>Montreal</li>
+                    <li>Quebec</li>
+                    <li>Vancouver</li>
+                </ul>
+            </div>
+            <div class="item33">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plants.html">Plants</a></li>
+                        <li><a href="gardening.html">Gardening</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 7. Create id for the copyright section -->
+            <p id="copyright">Copyright &copy; Gabriel Green Garden House</p>
+        </footer>
+    </div>
 </body>
 </html>

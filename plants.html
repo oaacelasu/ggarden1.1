@@ -1,6 +1,6 @@
 <!-- Created by Oscar Acelas - oacelasupegui4062@conestogac.on.ca
-Date: 10/06/22
-Assignment 3: CSS Box model & Web Graphics -->
+Date: 14/07/22
+Assignment 3: Flexbox & CSS Grid -->
 
 
 <!-- Task. 3 - construct plants.html -->
@@ -16,93 +16,95 @@ Assignment 3: CSS Box model & Web Graphics -->
     <title>Gabriel Green Garden House - Plants</title>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html">Gabriel Green Garden House</a></h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plants.html">Plants</a></li>
-            <li><a href="gardening.html">Gardening</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <img id="hero-img" class="desktop" src="img/curly-tendrils-of-potted-plants-on-wooden-shelf.jpg" alt="hero image">
-        <div id="wrapper">
-            <!-- 3. Create a section for the plants -->
-            <h2>Plants</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</p>
+    <div id="page-container">
+        <header>
+            <h1><a href="index.html">Gabriel Green Garden House</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="gardening.html">Gardening</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <img id="hero-img" class="desktop" src="img/curly-tendrils-of-potted-plants-on-wooden-shelf.jpg" alt="hero image">
+            <div id="wrapper">
+                <!-- 3. Create a section for the plants -->
+                <h2>Plants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat libero sapiente dolorem, nam animi, optio ea iure aliquam amet perspiciatis tempora ex quaerat! Accusantium adipisci laboriosam earum reprehenderit maxime!</p>
 
-            <!-- 4. Create a section for the plants -->
-            <div id="categories">
-                <section>
-                    <img src="img/bee-covered-in-yellow-dust.jpg" alt="vines">
-                    <h3>Vines</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </section>
-                <section>
-                    <img src="img/gold-shelf-with-a-green-vine-house-plant.jpg" alt="evergreen">
-                    <h3>Evergreens</h3>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                </section>
-                <section>
-                    <img src="img/close-up-on-evergreen-bonzai.jpg" alt="flowering shrubs">
-                    <h3>Flowering Shrubs</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </section>
-                <section>
-                    <img src="img/summer-garden-with-pink-phlox.jpg" alt="trees">
-                    <h3>Trees</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </section>
-                <section>
-                    <img src="img/sunflower-fills-center-of-a-frame.jpg" alt="annuals">
-                    <h3>Annuals</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </section>
+                <!-- 4. Create a section for the plants -->
+                <div id="categories">
+                    <section>
+                        <img src="img/bee-covered-in-yellow-dust.jpg" alt="vines">
+                        <h3>Vines</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </section>
+                    <section>
+                        <img src="img/gold-shelf-with-a-green-vine-house-plant.jpg" alt="evergreen">
+                        <h3>Evergreens</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </section>
+                    <section>
+                        <img src="img/close-up-on-evergreen-bonzai.jpg" alt="flowering shrubs">
+                        <h3>Flowering Shrubs</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </section>
+                    <section>
+                        <img src="img/summer-garden-with-pink-phlox.jpg" alt="trees">
+                        <h3>Trees</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </section>
+                    <section>
+                        <img src="img/sunflower-fills-center-of-a-frame.jpg" alt="annuals">
+                        <h3>Annuals</h3>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    </section>
+                </div>
             </div>
-        </div>
-    </main>
-    <!-- 4. Create the footer section -->
-    <footer>
-        <div class="item33">
-            <h3>Store hours</h3>
-            <ul>
-                <li>Monday: 9:00am - 5:00pm</li>
-                <li>Tuesday: 9:00am - 5:00pm</li>
-                <li>Wednesday: 9:00am - 5:00pm</li>
-                <li>Thursday: 9:00am - 5:00pm</li>
-                <li>Friday: 9:00am - 5:00pm</li>
-                <li>Saturday: 9:00am - 5:00pm</li>
-                <li>Sunday: Closed</li>
-            </ul>
-        </div>
-        <div class="item33">
-            <h3>Stores</h3>
-            <ul>
-                <li>Waterloo</li>
-                <li>London</li>
-                <li>Ottawa</li>
-                <li>Toronto</li>
-                <li>Montreal</li>
-                <li>Quebec</li>
-                <li>Vancouver</li>
-            </ul>
-        </div>
-        <div class="item33">
-            <h3>Quick Links</h3>
-            <nav>
+        </main>
+        <!-- 4. Create the footer section -->
+        <footer>
+            <div class="item33">
+                <h3>Store hours</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="plants.html">Plants</a></li>
-                    <li><a href="gardening.html">Gardening</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>Monday: 9:00am - 5:00pm</li>
+                    <li>Tuesday: 9:00am - 5:00pm</li>
+                    <li>Wednesday: 9:00am - 5:00pm</li>
+                    <li>Thursday: 9:00am - 5:00pm</li>
+                    <li>Friday: 9:00am - 5:00pm</li>
+                    <li>Saturday: 9:00am - 5:00pm</li>
+                    <li>Sunday: Closed</li>
                 </ul>
-            </nav>
-        </div>
-        <!-- 7. Create id for the copyright section -->
-        <p id="copyright">Copyright &copy; Gabriel Green Garden House</p>
-    </footer>
+            </div>
+            <div class="item33">
+                <h3>Stores</h3>
+                <ul>
+                    <li>Waterloo</li>
+                    <li>London</li>
+                    <li>Ottawa</li>
+                    <li>Toronto</li>
+                    <li>Montreal</li>
+                    <li>Quebec</li>
+                    <li>Vancouver</li>
+                </ul>
+            </div>
+            <div class="item33">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plants.html">Plants</a></li>
+                        <li><a href="gardening.html">Gardening</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 7. Create id for the copyright section -->
+            <p id="copyright">Copyright &copy; Gabriel Green Garden House</p>
+        </footer>
+    </div>
 </body>
 </html>
