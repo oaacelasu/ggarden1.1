@@ -1,3 +1,53 @@
+/*Apply “border-box” to all elements using universal selector “*”*/
+* {
+  box-sizing: border-box;
+}
+/* 2. Set the width of <table> to “70%” and center the table using auto margin on left/right side;
+ */
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+th {
+    background-color: rgb(65, 132, 42);
+  color: white;
+    padding: 5px 0;
+}
+
+th, table caption, form label {
+    font-family: "Gabriola", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table caption {
+    font-weight: 600;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:nth-child(odd) {background: rgb(178,214, 163)}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 0 2px #bbb;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 15px;
+}
+
+label + * {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    justify-self: start;
+}
 
 h1, nav, footer {
   font-family: "Century Gothic", serif;
@@ -205,6 +255,10 @@ main {
     #categories section {
         width: 100%;
     }
+
+    form, table {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 759px) {
@@ -246,5 +300,19 @@ main {
         width: 100%;
         display: block;
         padding-left: 40%;
+    }
+
+    table, form {
+        width: 100%;
+    }
+
+    form {
+        padding: 0;
+        box-shadow: none;
+        grid-template-columns: 1fr;
+    }
+
+    input[type="submit"] {
+        justify-self: stretch;
     }
 }
